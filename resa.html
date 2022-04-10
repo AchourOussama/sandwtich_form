@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Restaurant</title>
+</head>
+<body style="margin: auto; width: 50%; margin-top: 20px;">
+    <form method="post" action="./recap.php">
+        <div class="form-group">
+          <label for="Nom">Nom :</label>
+          <input type="text" class="form-control" id="Nom" name="nom" placeholder="Nom">
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" class="form-control" id="prenom" name="prenom"placeholder="Prénom">
+        </div>
+        <div class="form-group">
+            <label for="sand_number">Nombre de sandwitch :</label>
+            <input type="number" class="form-control" id="sand_number" name="sandwitchNumber"placeholder="Nombre de sandwitch">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Adresse</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name ="adresse"rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="Type de sandwitch">Type de sandwitch :</label>
+          <select class="form-control" id="Type de sandwitch" name="sandwitchType">
+            <option>viande</option>
+            <option>poulet</option>
+            <option>escalope</option>
+            
+          </select>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Harissa" name="ingredient[]"id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">Harissa</label>
+          </div>
+          
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Salade" name="ingredient[]" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">Salade</label>
+          </div>
+          
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Mayo" name="ingredient[]" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">Mayo</label>
+          </div>
+        <br>
+        <input type="submit" class="btn btn-primary">
+      </form>
+      
+    
+</body>
+</html>
